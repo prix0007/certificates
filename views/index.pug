@@ -1,0 +1,42 @@
+extends layout
+
+block content
+    nav
+        .nav-wrapper.teal.darken-4
+            a.brand-logo(href='https://www.tantrafiesta.in')
+                img(src="/img/tf.png")
+            a.sidenav-trigger(href='#' data-target='mobile-demo')
+                i.material-icons | | |
+            ul.right.hide-on-med-and-down
+                li
+                    a(href='https://www.iiitn.ac.in') IIITN
+                li
+                    a(href='https://www.tantrafiesta.in') Tantrafiesta
+                li
+                    a(href='/tantrafiesta/login') Download
+    ul#mobile-demo.sidenav.teal
+        li
+            a(href='https://www.iiitn.ac.in') IIITN
+        li
+            a(href='https://www.tantrafiesta.in') Tantrafiesta
+        li
+            a(href='/tantrafiesta/login') Download
+    .container
+        center
+            img.materialboxed#tf_logo(src='https://prix0007.github.io/TF_WEBSITE/assets/images/tf.png' alt='Tantrfiesta_Image')
+            svg#logo.materialboxed(width='652' height='124' viewbox='0 0 592 124' fill='none' xmlns='http://www.w3.org/2000/svg')
+                path(d='M84.8 34.4H0.800049V40.4H61.4001V61.52H39.4401C30.0801 61.52 23.2401 63.32 18.92 66.92C14.68 70.44 12.56 76.32 12.56 84.56C12.56 100.72 20.5601 113.76 36.5601 123.68L40.5201 117.56C27.4801 108.84 20.9601 97.56 20.9601 83.72C20.9601 78.04 22.4401 73.92 25.4001 71.36C28.3601 68.8 33.0401 67.52 39.4401 67.52H61.4001V122H69.8V40.4H84.8V34.4Z' stroke='white' stroke-width='3')
+                path(d='M65.5907 12.56C67.8307 12.56 69.4707 12.08 70.5107 11.12C71.4707 10.16 71.9507 8.59996 71.9507 6.43996C71.9507 4.19996 71.4707 2.59997 70.5107 1.63997C69.4707 0.679962 67.8307 0.199951 65.5907 0.199951C63.4307 0.199951 61.8707 0.679962 60.9107 1.63997C59.9507 2.59997 59.4707 4.19996 59.4707 6.43996C59.4707 8.59996 59.9507 10.16 60.9107 11.12C61.8707 12.08 63.4307 12.56 65.5907 12.56Z' stroke='white' stroke-width='3')
+                path(d='M92.2025 70.64C95.5625 63.84 101.283 60.44 109.363 60.44C114.083 60.44 118.043 61.52 121.243 63.68C124.523 65.84 128.563 69.52 133.363 74.72L137.803 79.52L94.8425 104.24L98.5625 111.32L139.963 85.52V122H148.363V40.4H163.363V34.4H82.3625V40.4H139.963V72.44L138.043 70.4C132.123 64.08 127.163 59.68 123.163 57.2C119.243 54.64 114.363 53.36 108.523 53.36C98.4425 53.36 91.0425 57.68 86.3225 66.32L92.2025 70.64Z' stroke='white' stroke-width='3')
+                path(d='M204.814 40.4H212.014V41.48V115.88H204.814V122H230.254V115.88H220.654V81.08H252.814V73.88H220.654V41.48H252.094V53.36H258.814V34.4H204.814V40.4Z' stroke='white' stroke-width='3')
+                path(d='M271.963 40.4H280.363V116H271.963V122H297.403V116H289.003V40.4H297.403V34.4H271.963V40.4Z' stroke='white' stroke-width='3')
+                path(d='M314.15 122H372.95V103.04H366.23V114.92H329.99V81.08H364.55V73.88H329.99V41.48H363.83V53.36H370.55V34.4H314.15V40.4H321.35V116H314.15V122Z' stroke='white' stroke-width='3')
+                path(d='M392.284 122V111.68C397.164 119.68 405.204 123.68 416.404 123.68C426.484 123.68 433.564 121.6 437.644 117.44C441.804 113.28 443.884 107.12 443.884 98.96C443.884 91.52 442.164 86.16 438.724 82.88C435.284 79.52 429.164 77 420.364 75.32L409.684 73.28C403.764 72.16 399.884 70.56 398.044 68.48C396.204 66.4 395.284 62.88 395.284 57.92C395.284 51.84 396.604 47.32 399.244 44.36C401.884 41.4 406.844 39.92 414.124 39.92C426.604 39.92 433.644 45.2 435.244 55.76H441.724V34.4H435.244V43.76C430.924 36.4 423.284 32.72 412.324 32.72C402.884 32.72 396.244 34.88 392.404 39.2C388.564 43.52 386.644 49.8 386.644 58.04C386.644 65.56 388.244 70.92 391.444 74.12C394.724 77.32 400.684 79.76 409.324 81.44L420.124 83.48C425.884 84.6 429.844 86.28 432.004 88.52C434.164 90.76 435.244 94.64 435.244 100.16C435.244 105.6 433.724 109.68 430.684 112.4C427.724 115.12 422.564 116.48 415.204 116.48C407.604 116.48 401.924 114.6 398.164 110.84C394.404 107 392.444 102.08 392.284 96.08H385.804V122H392.284Z' stroke='white' stroke-width='3')
+                path(d='M512.665 53.36V34.4H450.505V53.36H457.225V41.48H477.265V116H467.665V122H495.505V116H485.905V41.48H505.945V53.36H512.665Z' stroke='white' stroke-width='3')
+                path(d='M547.235 34.4L519.995 116H514.475V122H535.835V116H528.635L535.955 93.68H570.035L577.355 116H570.275V122H591.635V116H585.995L558.875 34.4H547.235ZM552.995 41.96L567.755 86.6H538.355L552.995 41.96Z' stroke='white' stroke-width='3')
+            a.waves-effect.waves-light.teal.darken-2.btn.bottom-btn(href='/tantrafiesta/login') Download Certificate
+    script.
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+        });

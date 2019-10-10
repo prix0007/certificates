@@ -1,0 +1,40 @@
+extends layout
+
+block content
+	nav
+		.nav-wrapper.teal.darken-4
+			a.brand-logo(href='https://www.tantrafiesta.in')
+				img(src="/img/tf.png")
+			a.sidenav-trigger(href='#' data-target='mobile-demo') | | |
+			ul.right.hide-on-med-and-down
+				li
+					a(href='https://www.iiitn.ac.in') IIITN
+				li
+					a(href='https://www.tantrafiesta.in') Tantrafiesta
+				li
+					a(href='/tantrafiesta/login') Download
+	ul#mobile-demo.sidenav.teal
+		li
+			a(href='https://www.iiitn.ac.in') IIITN
+		li
+			a(href='https://www.tantrafiesta.in') Tantrafiesta
+		li
+			a(href='/tantrafiesta/login') Download
+	center
+		img#tf_logo(src='https://prix0007.github.io/assests/images/logos/full_logo_with_theme.png', alt='Tantrfiesta_Image')
+		.form_login
+			h4.white-text.login_head Login
+			form(action='/tantrafiesta/login', method='POST')
+				.input-field
+					input#email.validate(type='email', name='email')
+					label(for='email') Email
+				.input-field
+					input#password.validate(type='password', name='password')
+					label(for='password') Password
+				center
+					button.waves-effect.waves-light.teal.darken-4.btn(type='submit') Login to Download
+	script.
+		document.addEventListener('DOMContentLoaded', function() {
+			var elems = document.querySelectorAll('.sidenav');
+			var instances = M.Sidenav.init(elems);
+		});

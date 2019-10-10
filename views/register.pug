@@ -1,0 +1,46 @@
+extends layout
+
+block content   
+    nav
+        .nav-wrapper.teal.darken-4
+            a.brand-logo(href='https://www.tantrafiesta.in')
+                img(src="/img/tf.png")
+            a.sidenav-trigger(href='#' data-target='mobile-demo')
+                i.material-icons | | |
+            ul.right.hide-on-med-and-down
+                li
+                    a(href='https://www.iiitn.ac.in') IIITN
+                li
+                    a(href='https://www.tantrafiesta.in') Tantrafiesta
+                li
+                    a(href='/tantrafiesta/login') Download 
+    .container
+        h1(style="color: white") Register Certificate
+        .row
+            form.col.s6(method='POST', action='/tantrafiesta/register')
+                #form-group 
+                    label Name of Participant:
+                    input.form-control(name='name', type='text')
+                #form-group 
+                    label Email of Participant:
+                    input.form-control(name='email', type='email')
+                #form-group 
+                    label Type of Certificate:
+                    input.form-control(name='t_o_c', type='text')
+                #form-group 
+                    label Event Name:
+                    input.form-control(name='event_name', type='text')
+                #form-group 
+                    label Position(0 if for Participation, 1 for rank 1, 2 for rank 2, 3 for rank 3):
+                    input.form-control(name='event_pos', type='number')
+                #form-group 
+                    label Password:
+                    input.form-control(name='password', type='password')
+                #form-group 
+                    label Confirm Password:
+                    input.form-control(name='password2', type='password')
+                #form-group 
+                    label Designation:
+                    input.form-control(name='designation', type='text')
+                br
+                button.waves-effect.waves-light.teal.darken-4.btn(type='submit') Register Certificate

@@ -1,0 +1,22 @@
+doctype html
+html
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        meta(http-equiv='X-UA-Compatible' content='ie=edge')
+        title TF
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css")
+        link(rel='stylesheet' href='/css/style.css')
+        style.
+            @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Satisfy&display=swap');
+
+
+    body
+        br
+        != messages('message', locals)
+        if errors
+            each error, i in errors
+                div(class="btn red") #{error.msg}
+        block content
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js')
+    script(src='/js/main.js')
