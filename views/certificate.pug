@@ -43,15 +43,12 @@ block content
                     if certs==0
                             p error certificate Not found yet Please contact TF Team.
                 div#signature
-                    #sign1
-                        img(src="https://camo.githubusercontent.com/805e05b94844e39d7edd518f492c8599c71835b3/687474703a2f2f692e696d6775722e636f6d2f646e5873344e442e706e67", alt="Dr. Tapan Jain")
-                        p Faculty In-Charge
                     #sign2
-                        img(src="https://camo.githubusercontent.com/805e05b94844e39d7edd518f492c8599c71835b3/687474703a2f2f692e696d6775722e636f6d2f646e5873344e442e706e67", alt="Dr. Kirti Doshedwar")
+                        img(src="/img/sign1.jpg", alt="Dr. Kirti Doshedwar")
                         p Faculty In-Charge
                 #footer_bottom
                     if certs!=0
-                    center
+                    center#overpush
                         p#hash https://etiam.serveo.net/tantrafiesta/certificate/#{_id}
                         p#timestamp Timestamp: #{time}
                     center

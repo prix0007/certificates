@@ -265,6 +265,10 @@ input{
     margin-top: 40px;
 }
 
+#overpush{
+    margin-left: 150px;
+}
+
 /*Media Queries*/
 @media screen and (max-width: 1040px){
     .banner{
