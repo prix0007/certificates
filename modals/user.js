@@ -16,24 +16,16 @@ const UserSchema = mongoose.Schema({
         type: String,
         required: true
     },
-    event_name:{
+    team_name:{
         type: String,
-        required: true
-    },
-    event_pos:{
-        type: Number,
-        required: true
-    }, 
-    password:{
-        type: String,
-        required: true
-    },
-    timestamp:{
-        type: Date,
         required: true
     },
     designation: {
         type: String,
+        required: true
+    },
+    certificate_id: {
+        type: Number,
         required: true
     }
 });

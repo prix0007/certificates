@@ -175,18 +175,10 @@ router.get('/certificate/:id', function(req, res){
             name: user.name,
             toc: user.t_o_c,
             certs: cert_type,
-            event_name: user.event_name,
-            event_pos: user.event_pos,
-            time: user.timestamp,
-            designation: user.designation
+            team_name: user.team_name,
+            designation: user.designation,
+            certificate_id: user.certificate_id
         })
     });
 })
-
-// //Logout 
-// router.get('/logout', function (req, res) {
-//     req.logout();
-//     req.flash('success', 'You are Logout Now');
-//     res.redirect('/users/login');
-// });
 module.exports = router;

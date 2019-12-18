@@ -32,13 +32,13 @@ block content
                             | by Indian Institute of Information Technology, Nagpur
                             | during Technical fest TantraFiesta 2K19 in the Academic Year 2019-2020.
                     if certs==4
-                        p has participated in the event #{event_name} 
+                        p has participated in the event #{team_name} 
                             | conducted by Indian Institute of Information Technology, Nagpur
                             | during Technical fest TantraFiesta 2K19 in the Academic Year 2019-2020.
                     if certs==5
                         p has participated in TantraFiesta 2K19 conducted by Indian Institue of Information Technology, Nagpur
                             |  during  in the Academic Year 2019-2020 as
-                            |  the <span style="font-weight: 700">#{designation}</span> in <span style="font-weight: 700">#{event_name}</span> Team and we thank them for their 
+                            |  the <span style="font-weight: 700">#{designation}</span> in <span style="font-weight: 700">#{team_name}</span> Team and we thank them for their 
                             |  efforts and dedication.
                     if certs==0
                             p error certificate Not found yet Please contact TF Team.
@@ -49,8 +49,7 @@ block content
                 #footer_bottom
                     if certs!=0
                     center#overpush
-                        p#hash https://etiam.serveo.net/tantrafiesta/certificate/#{_id}
-                        p#timestamp Timestamp: #{time}
+                        p#hash Certificate Number - #{certificate_id}
                     center
                         p#copy &copy; TantraFiesta 2K19. All Rights Reserved
     center
@@ -58,8 +57,8 @@ block content
     script(src='/js/qrcode.min.js')
     script(src='/js/qrcode.tosjis.min.js')
     script.
-        var auth_link = " https://etiam.serveo.net/tantrafiesta/certificate/"+"#{_id}"
-        QRCode.toCanvas(document.getElementById('canvas'), auth_link, { scale :2} ,function (error) {
+        var auth_link = "https://iiitn.ac.in/tantrafiesta.php"
+        QRCode.toCanvas(document.getElementById('canvas'), auth_link, { scale :3} ,function (error) {
         if (error) console.error(error)
         console.log('success!');
         })
@@ -68,14 +67,5 @@ block content
     script(src="/js/printThis.js") 
     script.
         function printElem(){
-            //- window.print();
-            //- var printContents = document.getElementById("cert").innerHTML;
-            //- console.log(printContents)
-            //- var originalContents = document.body.innerHTML;
-
-            //- document.body.innerHTML = printContents;
-
             window.print();
-
-            //- document.body.innerHTML = originalContents;
         }
